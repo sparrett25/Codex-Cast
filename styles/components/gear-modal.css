@@ -1,0 +1,49 @@
+.modal-footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1.5rem;
+}
+
+.modal-more-btn {
+  background: #1e88e5;
+  color: white;
+  border: none;
+  padding: 0.5rem 1.2rem;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.modal-more-btn:hover {
+  background: #1565c0;
+}
+
+
+.spiral-symbol {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+}
+
+.spiral-svg {
+  width: 40px;
+  height: 40px;
+  stroke: #00fff7;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  animation: spiralGlow 2s ease-in-out infinite alternate;
+}
+
+@keyframes spiralGlow {
+  from {
+    stroke: rgba(0, 255, 247, 0.5);
+    filter: drop-shadow(0 0 4px #00fff7);
+  }
+  to {
+    stroke: rgba(0, 255, 180, 1);
+    filter: drop-shadow(0 0 8px #00fff7);
+  }
+}

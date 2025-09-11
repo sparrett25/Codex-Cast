@@ -1,0 +1,241 @@
+.home-container {
+  padding: 2rem;
+  color: #f0f0f0;
+  text-align: center;
+}
+
+.home-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.home-header p {
+  margin: 0.25rem 0;
+  color: #cfd6e0;
+}
+
+.home-whisper {
+  font-style: italic;
+  color: #9fd7ff;
+  margin-top: 1rem;
+}
+
+.portal-grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  margin-top: 2rem;
+}
+
+.portal-card {
+  display: block;
+  padding: 1.25rem;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 1rem;
+  text-align: left;
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.25s ease;
+}
+
+.portal-card:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.3);
+  transform: translateY(-4px);
+}
+
+.portal-header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.portal-header h3 {
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+.portal-emoji {
+  font-size: 1.5rem;
+}
+
+.portal-desc {
+  margin-top: 0.5rem;
+  color: #cfd6e0;
+  font-size: 0.9rem;
+}
+
+.portal-enter {
+  margin-top: 0.75rem;
+  font-size: 0.8rem;
+  color: #7fd9c7;
+  opacity: 0;
+  transition: opacity 0.25s ease;
+}
+
+.portal-card:hover .portal-enter {
+  opacity: 1;
+}
+
+.home-footer {
+  margin-top: 3rem;
+  font-size: 0.85rem;
+  color: #aaa;
+}
+
+/* Full-page gradient + subtle glows only on Home */
+body.home-bg {
+  background:
+    radial-gradient(1200px 600px at 15% 10%, rgba(110, 231, 255, 0.08), transparent 55%),
+    radial-gradient(900px 500px at 80% 25%, rgba(167, 139, 250, 0.08), transparent 50%),
+    radial-gradient(1000px 700px at 50% 90%, rgba(52, 211, 153, 0.08), transparent 55%),
+    linear-gradient(#0a0f14, #0e141b);
+  background-attachment: fixed;
+}
+
+/* Layout */
+.home-container {
+  padding: 2.5rem 1.25rem 4rem;
+  color: #f0f0f0;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.home-header h1 {
+  font-size: 2.6rem;
+  margin: 0 0 .25rem 0;
+  letter-spacing: .3px;
+  text-shadow: 0 1px 0 rgba(0,0,0,.4);
+  text-align: center;
+}
+.home-header p { margin: .25rem 0; color: #cfd6e0; text-align: center; }
+.home-whisper { font-style: italic; color: #9fd7ff; margin-top: .5rem; }
+
+/* Grid of portals */
+.portal-grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  margin-top: 2rem;
+}
+
+/* Cards with hover “ripple” glow */
+.portal-card {
+  display: block;
+  padding: 1.1rem 1.2rem 1rem;
+  background: rgba(255, 255, 255, 0.055);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 16px;
+  text-decoration: none;
+  color: inherit;
+  transition: transform .18s ease, box-shadow .25s ease, border-color .25s ease, background .25s ease;
+  box-shadow:
+    0 1px 0 rgba(255,255,255,0.06) inset,
+    0 10px 24px rgba(0,0,0,0.25);
+}
+.portal-card:hover {
+  transform: translateY(-3px);
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(180, 220, 255, 0.35);
+  box-shadow:
+    0 0 0 1px rgba(150, 210, 255, 0.25) inset,
+    0 12px 34px rgba(80, 200, 255, 0.18),
+    0 6px 16px rgba(0,0,0,0.3);
+}
+
+.portal-header { display: flex; align-items: center; gap: .6rem; }
+.portal-header h3 { font-size: 1.1rem; margin: 0; }
+.portal-emoji { font-size: 1.35rem; }
+.portal-desc { margin-top: .4rem; color: #cfd6e0; font-size: .92rem; }
+.portal-enter { margin-top: .65rem; font-size: .8rem; color: #7fd9c7; opacity: 0; transition: opacity .25s ease; }
+.portal-card:hover .portal-enter { opacity: 1; }
+
+/* Footer whisper banner */
+.home-footer-banner {
+  margin: 2.2rem auto 0;
+  display: inline-flex;
+  align-items: center;
+  gap: .6rem;
+  padding: .6rem .9rem;
+  border-radius: 999px;
+  border: 1px solid rgba(255,255,255,0.12);
+  background: linear-gradient(180deg, rgba(255,255,255,0.06), rgba(255,255,255,0.03));
+  box-shadow: 0 10px 28px rgba(0,0,0,0.25), 0 0 0 1px rgba(150, 210, 255, 0.18) inset;
+  font-size: .9rem;
+}
+.home-footer-icon { opacity: .6; }
+.home-footer-text { color: #d7e6ff; }
+
+.home-tip {
+  margin-top: 1rem;
+  font-size: .84rem;
+  color: #aab3bf;
+  text-align: center;
+}
+
+/* Small screens */
+@media (max-width: 480px) {
+  .home-header h1 { font-size: 2.1rem; }
+  .portal-grid { gap: 1rem; }
+}
+
+/* Typography polish */
+.home-header h1 { letter-spacing: .4px; }
+.home-header p { line-height: 1.5; }
+.portal-desc { line-height: 1.45; }
+.portal-card { backdrop-filter: saturate(1.1) blur(0.2px); }
+.portal-card:hover { backdrop-filter: saturate(1.2) blur(0.4px); }
+
+
+/* Subtle water drift */
+body.home-bg::before,
+body.home-bg::after {
+  content: "";
+  position: fixed; inset: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(600px 300px at 20% 15%, rgba(120,215,255,.06), transparent 60%),
+    radial-gradient(500px 260px at 78% 28%, rgba(140,110,255,.06), transparent 60%),
+    radial-gradient(680px 360px at 50% 88%, rgba(60,210,160,.06), transparent 60%);
+  mix-blend-mode: screen;
+  animation: cast-drift 22s linear infinite;
+  opacity: .5;
+}
+body.home-bg::after { animation-duration: 36s; opacity: .35; }
+
+@keyframes cast-drift {
+  0%   { transform: translate3d(0px, 0px, 0); }
+  50%  { transform: translate3d(0px, -8px, 0); }
+  100% { transform: translate3d(0px, 0px, 0); }
+}
+
+
+.portal-card { position: relative; overflow: hidden; }
+.portal-card::after {
+  content:""; position:absolute; inset:-40%;
+  background: radial-gradient(40% 40% at 50% 50%, rgba(140,210,255,.12), transparent 60%);
+  transform: scale(0); opacity: 0; transition: transform .35s ease, opacity .35s ease;
+}
+.portal-card:hover::after { transform: scale(1); opacity: 1; }
+.portal-card:hover {
+  transform: translateY(-3px);
+  background: rgba(255,255,255,0.085);
+  border-color: rgba(180,220,255,0.35);
+  box-shadow:
+    0 0 0 1px rgba(150,210,255,.22) inset,
+    0 12px 34px rgba(80,200,255,.16),
+    0 6px 16px rgba(0,0,0,.28);
+}
+
+.home-footer-banner {
+  margin-top: 26px;
+  letter-spacing: .15px;
+  border-color: rgba(180,220,255,.22);
+}
+.home-footer-text { text-shadow: 0 1px 0 rgba(0,0,0,.35); }
+
+.home-container a { text-decoration: none; }
+
+:root { --cast-font: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial; }
+body { font-family: var(--cast-font); }

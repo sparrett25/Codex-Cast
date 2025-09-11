@@ -1,0 +1,50 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Riverview Park",
+        "address": "123 River Rd",
+        "type": "catch-location"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.4,
+          27.87
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Gandy Bridge Spot",
+        "address": "Near Gandy Blvd",
+        "type": "fishing-spot"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.58,
+          27.87
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Gear Drop Point",
+        "address": "Tackle Depot Lot",
+        "type": "gear-drop"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.48,
+          27.91
+        ]
+      }
+    }
+  ]
+}

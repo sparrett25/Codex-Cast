@@ -1,0 +1,21 @@
+body { margin: 0; font-family: sans-serif; background: #0a0a0a; color: #fff; }
+
+/* Cast NavBar polish */
+.cast-nav {
+  position: fixed; inset-inline: 0; top: 12px; z-index: 50;
+  display: flex; justify-content: center;
+}
+.cast-nav__inner {
+  display: flex; gap: 8px;
+  background: rgba(8,12,17,.6);
+  border: 1px solid rgba(255,255,255,.12);
+  border-radius: 16px; padding: 8px 10px;
+  backdrop-filter: blur(6px) saturate(1.1);
+  box-shadow: 0 8px 24px rgba(0,0,0,.25);
+}
+.cast-nav__link {
+  padding: 8px 10px; border-radius: 10px; font-size: 13px;
+  color: #dce6f5; text-decoration: none; transition: background .2s,color .2s;
+}
+.cast-nav__link:hover { background: rgba(255,255,255,.08); color: #fff; }
+.cast-nav__link.is-active { background: rgba(255,255,255,.14); color: #fff; }

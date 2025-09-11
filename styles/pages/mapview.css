@@ -1,0 +1,34 @@
+.map-ambient-wrapper {
+  background: radial-gradient(circle at center, #0f2027, #203a43, #2c5364);
+  padding: 2rem;
+  border-radius: 2.5rem;
+  box-shadow: 0 0 40px rgba(0, 255, 255, 0.1);
+}
+
+.map-container {
+  height: 80vh;
+  border-radius: 2rem;
+  overflow: hidden;
+  box-shadow: 0 0 12px rgba(0, 255, 247, 0.2);
+}
+
+/* Pin Styling */
+.pin-marker {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #00fff7;
+  box-shadow: 0 0 6px rgba(0, 255, 247, 0.5);
+}
+
+.pin-marker.catch {
+  background: #f54242;
+}
+
+.pin-marker.location {
+  background: #42f557;
+}
+
+.pin-marker.spiritual {
+  background: #7f42f5;
+}

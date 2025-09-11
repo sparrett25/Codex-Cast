@@ -1,0 +1,126 @@
+/* catch-journal.css */
+
+.catch-journal-container {
+  background: linear-gradient(to bottom, #0b0c1a, #1a1b2f);
+  min-height: 100vh;
+  padding: 3rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.catch-form-wrapper {
+  width: 100%;
+  max-width: 600px;
+  background: rgba(20, 20, 30, 0.85);
+  padding: 1.5rem;
+  border-radius: 16px;
+  box-shadow: 0 0 20px rgba(120, 200, 255, 0.15);
+  margin-bottom: 2rem;
+  animation: rippleFadeIn 1.2s ease;
+}
+
+.catch-form-wrapper input,
+.catch-form-wrapper textarea {
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 0.75rem 1rem;
+  border-radius: 10px;
+  border: none;
+  background: #1e1f2d;
+  color: #d0f0ff;
+  font-size: 1rem;
+  outline: none;
+}
+
+.catch-form-wrapper input::placeholder,
+.catch-form-wrapper textarea::placeholder {
+  color: #8fa7b8;
+  font-style: italic;
+}
+
+.catch-form-wrapper button {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 12px;
+  background: #2488ff;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.catch-form-wrapper button:hover {
+  background: #46a2ff;
+}
+
+.catch-list-wrapper {
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+/* Catch entry card */
+.catch-entry {
+  background: rgba(20, 25, 40, 0.85);
+  border-radius: 16px;
+  padding: 1rem 1.5rem;
+  box-shadow: 0 0 12px rgba(120, 200, 255, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.catch-entry:hover {
+  transform: scale(1.01);
+  box-shadow: 0 0 20px rgba(150, 220, 255, 0.25);
+}
+
+/* Whisper popup */
+.catch-whisper {
+  position: fixed;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(100, 200, 255, 0.08);
+  border: 1px solid #66ccff;
+  padding: 0.75rem 1.5rem;
+  color: #aee7ff;
+  border-radius: 12px;
+  font-style: italic;
+  font-size: 0.95rem;
+  animation: fadeOut 3s ease forwards;
+  pointer-events: none;
+}
+
+
+.species-reminder {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.reminder-text {
+  color: #aee7ff;
+  font-style: italic;
+  font-size: 1rem;
+}
+
+
+
+/* Animations */
+@keyframes fadeOut {
+  0% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+@keyframes rippleFadeIn {
+  0% {
+    transform: scale(0.95);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}

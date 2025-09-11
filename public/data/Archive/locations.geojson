@@ -1,0 +1,121 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.319466,
+          27.86607
+        ]
+      },
+      "properties": {
+        "title": "Riverview Park",
+        "pinType": "location",
+        "icon": "location",
+        "targetId": "riverview_park",
+        "description": "11020 Park Dr, Riverview, FL 33569. Shady inlets ideal at dawn. Species: ['Largemouth Bass', 'Tilapia']",
+        "species": [
+          "Largemouth Bass",
+          "Tilapia"
+        ],
+        "scrollType": "species"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.320947,
+          27.773283
+        ]
+      },
+      "properties": {
+        "title": "Carlton Fields Pond",
+        "pinType": "location",
+        "icon": "location",
+        "targetId": "carlton_fields_pond",
+        "description": "Private property near Carlton Fields Blvd. Catch and Release Only. Species: ['Tilapia', 'Catfish']",
+        "species": [
+          "Tilapia",
+          "Catfish"
+        ],
+        "scrollType": "species"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.3204,
+          27.86787
+        ]
+      },
+      "properties": {
+        "title": "Riverview Civic Center and Boat Ramp",
+        "pinType": "location",
+        "icon": "location",
+        "targetId": "riverview_civic_center_and_boat_ramp",
+        "description": "11020 Park Dr, Riverview, FL 33569. Public boat ramp and shoreline access"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.23577,
+          27.82795
+        ]
+      },
+      "properties": {
+        "title": "Shadow Run Dam",
+        "pinType": "location",
+        "icon": "location",
+        "targetId": "shadow_run_dam",
+        "description": "12819 Shadow Run Blvd, Riverview, FL 33569. Dam overlook and quiet water below"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.13485,
+          27.77432
+        ]
+      },
+      "properties": {
+        "title": "Alafia River State Park Equestrian Trailhead",
+        "pinType": "location",
+        "icon": "location",
+        "targetId": "alafia_river_state_park_equestrian_trailhead",
+        "description": "13016 S County Rd 39, Lithia, FL 33547. Remote access point with fishing near trails"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.43507,
+          27.71954
+        ]
+      },
+      "properties": {
+        "title": "Ruskin Commongood Park",
+        "pinType": "location",
+        "icon": "location",
+        "targetId": "ruskin_commongood_park",
+        "description": "107 1st Ave NW, Ruskin, FL 33570. Shoreline park, potential Tilapia spots",
+        "species": [
+          "Tilapia"
+        ],
+        "scrollType": "species"
+      }
+    }
+  ]
+}

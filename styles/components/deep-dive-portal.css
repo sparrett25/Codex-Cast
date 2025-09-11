@@ -1,0 +1,92 @@
+/* Deep Dive Portal Styles */
+
+.deep-dive-portal {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  background: radial-gradient(circle at center, #1a1a1a, #0d0d0d);
+  color: #f9f9f9;
+  font-family: 'Cinzel', serif;
+}
+
+.deep-dive-sidebar {
+  width: 20%;
+  background: rgba(255, 255, 255, 0.05);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.glyph-display {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: #9fbbff;
+  animation: pulseGlow 3s infinite ease-in-out;
+}
+
+.tone-indicator {
+  font-size: 1rem;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.deep-dive-content {
+  flex: 1;
+  padding: 3rem;
+  overflow-y: auto;
+  background-image: url('/assets/parchment-glow.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.scroll-title {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #eaeaea;
+  text-shadow: 0 0 10px #7c9aff;
+}
+
+.scroll-description {
+  font-size: 1.2rem;
+  line-height: 1.7;
+  margin-bottom: 2rem;
+  color: #dddddd;
+}
+
+.scroll-tips {
+  padding-left: 1.5rem;
+  list-style-type: disc;
+  color: #c7e4ff;
+}
+
+.deep-dive-whisper {
+  width: 25%;
+  padding: 2rem;
+  background: rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-left: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.whisper-box {
+  font-style: italic;
+  font-size: 1rem;
+  background: #1e1e1e;
+  padding: 1rem 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(128, 168, 255, 0.3);
+  color: #b4cfff;
+}
+
+@keyframes pulseGlow {
+  0% { text-shadow: 0 0 4px #7c9aff; }
+  50% { text-shadow: 0 0 12px #aaccff; }
+  100% { text-shadow: 0 0 4px #7c9aff; }
+}

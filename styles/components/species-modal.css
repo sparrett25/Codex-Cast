@@ -1,0 +1,20 @@
+.gear-section {
+  margin-top: 1.5rem;
+}
+
+.gear-card-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 0.5rem;
+}
+
+.species-modal {
+  background: #121a2a;
+  padding: 2rem;
+  border-radius: 12px;
+  max-width: 500px;
+  color: #d0f0ff;
+  box-shadow: 0 0 20px rgba(100, 200, 255, 0.15);
+}

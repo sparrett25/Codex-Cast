@@ -1,0 +1,46 @@
+
+.journal-archive {
+  padding: 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+  font-family: 'Cinzel', serif;
+  color: #e2e8f0;
+}
+
+.archive-title {
+  font-size: 2rem;
+  text-align: center;
+  color: #f0f9ff;
+  margin-bottom: 2rem;
+}
+
+.no-entries {
+  text-align: center;
+  font-style: italic;
+  color: #94a3b8;
+}
+
+.archive-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.archive-entry {
+  background: radial-gradient(ellipse at center, #1e1e2e 0%, #0f172a 100%);
+  border: 1px solid #334155;
+  border-radius: 12px;
+  padding: 1.25rem;
+  box-shadow: 0 0 10px rgba(147, 197, 253, 0.1);
+}
+
+.entry-meta {
+  font-size: 0.9rem;
+  color: #a5b4fc;
+  margin-bottom: 0.5rem;
+}
+
+.entry-body p {
+  color: #e0f2fe;
+  line-height: 1.5;
+}

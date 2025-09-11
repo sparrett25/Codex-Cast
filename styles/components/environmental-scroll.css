@@ -1,0 +1,46 @@
+.environmental-scroll {
+  background: rgba(255, 255, 255, 0.03);
+  padding: 1.5rem;
+  border-radius: 16px;
+  box-shadow: inset 0 0 12px rgba(255, 255, 255, 0.04), 0 0 10px rgba(255, 255, 255, 0.02);
+  font-family: 'Cinzel', serif;
+  color: #ddeeff;
+  animation: envScrollFadeIn 0.4s ease;
+}
+
+@keyframes envScrollFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.section-title {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #b4dfff;
+  margin-bottom: 1rem;
+  text-shadow: 0 0 6px rgba(173, 216, 230, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  padding-bottom: 0.5rem;
+}
+
+.env-section p {
+  margin: 0.4rem 0;
+  font-size: 1rem;
+  color: #ccddee;
+  line-height: 1.4;
+}
+
+.env-reflection {
+  margin-top: 1.5rem;
+  font-style: italic;
+  text-align: center;
+  color: #a0d0ff;
+  opacity: 0.85;
+  font-size: 0.95rem;
+}

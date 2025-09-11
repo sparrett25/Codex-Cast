@@ -1,0 +1,19 @@
+.catch-header {
+  font-weight: bold;
+  margin-bottom: 0.25rem;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.catch-tone {
+  font-size: 0.95rem;
+  color: #aee7ff;
+}
+
+.catch-reflection {
+  margin-top: 0.5rem;
+  font-style: italic;
+  color: #b4cfff;
+  font-size: 0.9rem;
+}

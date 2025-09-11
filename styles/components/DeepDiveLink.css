@@ -1,0 +1,33 @@
+
+.deep-dive-link {
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  border-radius: 1.2rem;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background-color: #1c1c1c;
+  color: #fff;
+  box-shadow: 0 0 0px transparent;
+}
+
+.deep-dive-link:hover {
+  transform: scale(1.05);
+}
+
+/* Tone Variants */
+.deep-dive-reflective {
+  box-shadow: 0 0 8px 2px rgba(0, 255, 200, 0.6);
+}
+
+.deep-dive-excited {
+  box-shadow: 0 0 8px 2px rgba(255, 120, 0, 0.7);
+}
+
+.deep-dive-focused {
+  box-shadow: 0 0 8px 2px rgba(0, 180, 255, 0.7);
+}
+
+.deep-dive-neutral {
+  box-shadow: 0 0 8px 2px rgba(255, 255, 255, 0.2);
+}

@@ -1,0 +1,27 @@
+.environmental-overlay {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: rgba(15, 15, 20, 0.85);
+  padding: 10px;
+  border-radius: 8px;
+  color: white;
+  z-index: 10;
+  font-family: 'Cinzel', serif;
+}
+
+.overlay-controls {
+  display: flex;
+  gap: 8px;
+  margin-top: 5px;
+}
+
+.glyph-button {
+  background: none;
+  border: 1px solid white;
+  padding: 6px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 18px;
+  color: white;
+}

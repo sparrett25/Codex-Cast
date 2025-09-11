@@ -1,0 +1,18 @@
+
+.scroll-link {
+  background-color: #1c1c1c;
+  color: #00ffc3;
+  padding: 0.5rem 1rem;
+  border-radius: 0.75rem;
+  border: 1px solid #00ffc3;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+.scroll-link:hover {
+  background-color: #00ffc3;
+  color: #1c1c1c;
+  transform: scale(1.05);
+}

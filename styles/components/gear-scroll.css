@@ -1,0 +1,74 @@
+
+.gear-scroll {
+  background: #1b1b1b;
+  color: #f0f0f0;
+  padding: 2rem;
+  border-radius: 1rem;
+  max-width: 800px;
+  margin: 0 auto;
+  font-family: 'Segoe UI', sans-serif;
+  box-shadow: 0 0 18px rgba(0, 180, 255, 0.3);
+}
+
+.scroll-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.scroll-header h2 {
+  font-size: 1.8rem;
+  color: #00bfff;
+}
+
+.scroll-header button {
+  background: transparent;
+  border: none;
+  color: #f0f0f0;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+section h3 {
+  font-size: 1.3rem;
+  color: #00bfff;
+  margin-bottom: 0.5rem;
+  border-bottom: 1px solid #333;
+  padding-bottom: 0.3rem;
+}
+
+section p, section li {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+blockquote {
+  margin: 1rem 0;
+  padding: 1rem;
+  background: #222;
+  border-left: 4px solid #00bfff;
+  font-style: italic;
+  color: #ccc;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 0.5rem;
+}
+
+table th, table td {
+  border: 1px solid #333;
+  padding: 0.5rem;
+  text-align: left;
+}
+
+table thead th {
+  background-color: #222;
+  color: #00bfff;
+}

@@ -1,0 +1,52 @@
+/* pin-popup.css */
+.pin-popup-card {
+  background: rgba(18, 24, 27, 0.95);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 12px 16px;
+  box-shadow: 0 0 8px rgba(0, 255, 255, 0.3);
+  color: #e0f7fa;
+  max-width: 240px;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.spiral-icon {
+  width: 24px;
+  height: 24px;
+  background-image: url('/icons/spiral.svg');
+  background-size: cover;
+  margin-bottom: 6px;
+  animation: rotateSlow 6s linear infinite;
+}
+
+.pin-whisper {
+  font-style: italic;
+  font-size: 0.9rem;
+  margin: 8px 0;
+  color: #aee9f7;
+}
+
+.enter-scroll-btn {
+  background: linear-gradient(to right, #00acc1, #26c6da);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 6px 12px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.enter-scroll-btn:hover {
+  background: linear-gradient(to right, #26c6da, #00acc1);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(5px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes rotateSlow {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}

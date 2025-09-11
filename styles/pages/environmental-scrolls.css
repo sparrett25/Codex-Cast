@@ -1,0 +1,37 @@
+/* Environmental Scrolls Styling - matches species + gear layout */
+
+.species-guide-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+}
+
+.species-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 900px;
+  gap: 1rem;
+}
+
+.species-button {
+  background: #161b22;
+  color: #d6e8ff;
+  padding: 1rem 1.5rem;
+  border: 2px solid rgba(128, 170, 255, 0.2);
+  border-radius: 12px;
+  font-family: 'Cinzel', serif;
+  font-size: 1.1rem;
+  margin: 0.5rem;
+  cursor: pointer;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+  text-shadow: 0 0 6px rgba(100, 160, 255, 0.3);
+}
+
+.species-button:hover,
+.species-button:focus {
+  background: #263043;
+  box-shadow: 0 0 14px rgba(138, 198, 255, 0.35);
+  outline: none;
+}

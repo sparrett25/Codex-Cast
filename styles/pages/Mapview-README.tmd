@@ -1,0 +1,22 @@
+To activate this style:
+
+1. Ensure your main Map container uses:
+   <div className="map-container">
+     <div className="map-mist-layer" />
+     <Map ... />
+
+2. Add className "mapboxgl-map" manually to Map outer element if needed, or target Map directly.
+
+3. Import mapview.css at the top of MapView.jsx:
+   import './mapview.css';
+
+These styles match the tone of CatchJournal and Environmental Assistant.
+
+
+mapbox://styles/mapbox/dark-v10
+mapbox://styles/mapbox/light-v10
+mapbox://styles/mapbox/outdoors-v11
+mapbox://styles/mapbox/satellite-streets-v12
+
+
+Or create your own in Mapbox Studio to match the Cast tone:

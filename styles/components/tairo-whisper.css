@@ -1,0 +1,26 @@
+.tairo-whisper-container {
+  position: fixed;
+  bottom: 3rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(20, 30, 50, 0.8);
+  color: #aee7ff;
+  padding: 0.75rem 1.5rem;
+  border-radius: 12px;
+  font-style: italic;
+  font-size: 1rem;
+  z-index: 1000;
+  box-shadow: 0 0 12px rgba(100, 200, 255, 0.15);
+  animation: whisperFadeIn 1s ease forwards;
+}
+
+@keyframes whisperFadeIn {
+  from {
+    opacity: 0;
+    transform: translateX(-50%) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(-50%) scale(1);
+  }
+}
