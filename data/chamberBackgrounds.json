@@ -1,0 +1,15 @@
+{
+  "home":         { "src": "/images/chambers/home-dawn.png",        "caption": "Cast • dawn on the dock" },
+  "mirror-lake":  { "src": "/images/chambers/mirror-lake-day.png",   "caption": "Mirror Lake • still waters" },
+  "journal":      { "src": "/images/chambers/journal-wood.png",      "caption": "Journal • lantern and pages" },
+  "plan-trip":    { "src": "/images/chambers/plan-trip-topo.png",    "caption": "Plan Trip • maps and compass" },
+  "species":      { "src": "/images/chambers/species-watercol.png",  "caption": "Species • beneath the surface" },
+  "quests":       { "src": "/images/chambers/quests-trailhead.png",  "caption": "Quests • the trailhead" },
+  "papa-cabin":   { "src": "/images/chambers/papa-cabin-ember.png",  "caption": "Papa’s Cabin • ember glow" },
+  "environment":  { "src": "/images/chambers/environment.png",       "caption": "Environment • wind, moon, tide" },
+  "locations":    { "src": "/images/chambers/locations.png",         "caption": "Locations • marked waters" },
+  "gear":         { "src": "/images/chambers/gear.png",              "caption": "Gear • tools of the craft" },
+  "techniques":   { "src": "/images/chambers/techniques.png",        "caption": "Techniques • the cast arc" },
+  "trip-summary": { "src": "/images/chambers/trip-summary.png",      "caption": "Trip Summary • the day remembered" },
+  "favorites":    { "src": "/images/chambers/favorites.png",         "caption": "Favorites • treasured finds" }
+}

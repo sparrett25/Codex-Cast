@@ -1,0 +1,64 @@
+/* layout */
+.plan-grid{
+  display:grid; gap:18px;
+  grid-template-columns: 1fr;
+}
+@media (min-width: 980px){
+  .plan-grid{ grid-template-columns: 1.35fr .8fr; align-items:start; }
+}
+.page-offset-top{ padding-top: 8px; }
+
+/* cards */
+.plan-card{
+  background: rgba(255,255,255,.04);
+  border: 1px solid rgba(255,255,255,.08);
+  border-radius: 16px;
+  padding: 16px;
+}
+.card-head{
+  font-weight: 600; color: #e5e7eb; margin-bottom: 10px;
+}
+
+/* fields */
+.field{ display:grid; gap:6px; margin-bottom:12px; }
+.field.two{ grid-template-columns: 1fr 180px; gap:12px; }
+.field > span{ color:#cbd5e1; font-size:.9rem; }
+.input, .plan-card select, .plan-card textarea{
+  width:100%;
+  background:#0d1117; color:#e5e7eb;
+  border:1px solid rgba(255,255,255,.12);
+  padding:10px 12px; border-radius:10px; outline:none;
+}
+.input:focus, .plan-card select:focus, .plan-card textarea:focus{
+  border-color:#60a5fa; box-shadow:0 0 0 3px rgba(96,165,250,.2);
+}
+
+/* chips / segmented */
+.seg{ display:flex; flex-wrap:wrap; gap:8px; margin-top:6px; }
+.chips-wrap{ display:flex; flex-wrap:wrap; gap:8px; margin-top:6px; }
+.chip{
+  background: rgba(255,255,255,.06);
+  border:1px solid rgba(255,255,255,.14);
+  color:#e5e7eb; padding:6px 10px; border-radius:999px;
+  font-size:.9rem; cursor:pointer; transition:background .15s, transform .06s;
+}
+.chip:hover{ background: rgba(255,255,255,.12); }
+.chip--active{ background: rgba(96,165,250,.18); border-color: rgba(96,165,250,.4); color:#dbeafe; }
+
+.hint{ color:#9ca3af; font-size:.85rem; margin-top:8px; }
+
+/* preview */
+.plan-aside .plan-card{ position:sticky; top:16px; }
+.preview{ display:grid; gap:6px; color:#d1d5db; }
+.preview strong{ color:#e5e7eb; }
+
+/* actions */
+.actions{ display:flex; flex-wrap:wrap; gap:10px; margin-top:6px; }
+.btn-primary{
+  background:#60a5fa; color:#06121a; border:0;
+  padding:10px 16px; border-radius:10px; font-weight:600;
+}
+.btn-ghost{
+  background:transparent; color:#e5e7eb; border:1px solid rgba(255,255,255,.2);
+  padding:10px 16px; border-radius:10px;
+}

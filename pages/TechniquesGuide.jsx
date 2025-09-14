@@ -1,58 +1,53 @@
-import React, { useState } from 'react';
-import TechniqueCard from '../components/Techniques/TechniqueCard';
-import TechniqueDeepDivePortal from '../components/Techniques/TechniqueDeepDivePortal';
-import '../styles/pages/techniques-guide.css';
-
-import checkyourDrag from '../data/technique/checking-your-drag.json';
-import catfishChum from '../data/technique/chumming-for-catfish.json';
-import tilapiaFloat from '../data/technique/float-fishing-for-tilapia.json';
-import fishHandling from '../data/technique/handling-and-releasing-fish.json';
-import waterRead from '../data/technique/reading-the-water.json';
-import redfishSight from '../data/technique/sight-casting-for-redfish.json';
-import skippingDock from '../data/technique/skipping-soft-plastics-under-docks.json';
-import artofCast from '../data/technique/the-art-of-the-cast.json';
-import topwaterAmbush from '../data/technique/topwater-ambush-timing.json';
-import usingSinkers from '../data/technique/using-sinkers-with-strategy.json';
+// /pages/TechniquesGuide.jsx
+import ChamberLayout from "../components/ChamberLayout";
+import PapaMini from "../components/PapaMini";
+import ChamberTile from "../components/ChamberTile";
+import { say } from "../data/say";
+import { useMemo, useState } from "react";
+import { byFavFirst, useFavorites } from "../hooks/useFavorites";
+import { TECHNIQUES } from "../data/techniques";
+import CastBackground from "../components/CastBackground"; // adjust path if needed
 
 
-const techniqueList = [
-  checkyourDrag,
-  catfishChum,
-  tilapiaFloat,
-  fishHandling,
-  waterRead,
-  redfishSight,
-  skippingDock,
-  artofCast,
-  topwaterAmbush,
-  usingSinkers
-];
+const todaySeed = Number(new Date().toISOString().slice(0,10).replaceAll("-",""));
 
-export default function TechniquesGuide() {
-  const [activeTechnique, setActiveTechnique] = useState(null);
-
-  const handleOpen = (techniqueData) => setActiveTechnique(techniqueData);
-  const handleClose = () => setActiveTechnique(null);
-
+export default function TechniquesGuide(){
+	const { favSet } = useFavorites("techniques");
+  const [favFirst, setFavFirst] = useState(true);
+  const shown = useMemo(
+    () => favFirst ? byFavFirst(TECHNIQUES, x=>x.id, favSet) : TECHNIQUES,
+    [favFirst, favSet]
+  );
+  
   return (
-    <div className="techniques-guide">
-      <h1 className="page-title">Fishing Techniques</h1>
-      <div className="technique-list">
-        {techniqueList.map((technique) => (
-          <TechniqueCard
-            key={technique.name}
-            item={technique}
-            onExplore={() => handleOpen(technique)}
-          />
-        ))}
-      </div>
+  <CastBackground chamberKey="techniques">
+    <ChamberLayout
+      title="Techniques"
+      sub="Practice flows and refine your craft."
+      papa={<PapaMini line={say("chamber.techniques", todaySeed)} />}
+    >
+	
+	<label className="inline-flex items-center gap-2 text-white/75 mb-3">
+        <input type="checkbox" checked={favFirst} onChange={e=>setFavFirst(e.target.checked)} />
+        Favorites first
+      </label>
 
-      {activeTechnique && (
-        <TechniqueDeepDivePortal
-          techniqueData={activeTechnique}
-          onClose={handleClose}
+      <div className="tile-grid">
+        {shown.map(t => (
+          <ChamberTile
+            key={t.id}
+            to={`/techniques/${t.id}`}
+            icon={t.icon}
+            title={t.title}
+            sub={t.sub}
+            tags={t.tags}
+            type="techniques"  // ⭐
+            id={t.id}          // ⭐
         />
-      )}
-    </div>
+
+		))}
+		</div>
+    </ChamberLayout>
+	</CastBackground>
   );
 }

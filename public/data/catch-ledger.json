@@ -1,0 +1,48 @@
+{
+  "catchLedger": [
+    {
+      "id": "cl_2025-09-12_001",
+      "species_id": "largemouth_bass",
+      "species_name": "Largemouth Bass",
+      "alias": "The Gaping Tyrant",
+      "date": "2025-09-12",
+      "time": "06:57",
+      "location": {
+        "name": "Hillsborough River",
+        "lat": null,
+        "lon": null,
+        "water_type": "freshwater"
+      },
+      "conditions": {
+        "tempF": 76,
+        "wind": { "dir": "SW", "mph": 8 },
+        "cloud": 40,
+        "pressureTrend": "falling",
+        "moonPhase": "waning_gibbous"
+      },
+      "tackle": {
+        "rod": "MH/F 12–15lb",
+        "bait_or_lure": "Spinnerbait",
+        "color": "white/chartreuse",
+        "presentation": "slow roll along windward grass"
+      },
+      "metrics": {
+        "length_in": 18.5,
+        "weight_lb": 3.1,
+        "released": true
+      },
+      "notes": "First strike on windward bank; paused near laydown.",
+      "media": {
+        "mugshot_url": "mugshots/largemouth_bass_2025-09-12_0657.png",
+        "photos": [],
+        "video": null
+      },
+      "unlocked": {
+        "training_grounds": true,
+        "badges": ["first_catch"]
+      },
+      "created_at": "2025-09-12T07:05:12Z",
+      "updated_at": "2025-09-12T07:05:12Z"
+    }
+  ]
+}

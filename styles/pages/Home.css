@@ -239,3 +239,26 @@ body.home-bg::after { animation-duration: 36s; opacity: .35; }
 
 :root { --cast-font: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial; }
 body { font-family: var(--cast-font); }
+
+/* Responsive grid only (does not touch your card internals) */
+.portal-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.9rem;
+}
+@media (min-width: 640px) { /* sm */
+  .portal-grid { grid-template-columns: 1fr 1fr; }
+}
+@media (min-width: 1024px) { /* lg */
+  .portal-grid { grid-template-columns: 1fr 1fr 1fr; }
+}
+
+/* Light, optional alignment polish that won’t override your hover:
+   - border, radius, and neutralized link-decoration only.
+   - NO background/hover here (so your special hover stays intact). */
+.portal-card {
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,0.12);
+  text-decoration: none;
+}
+.portal-card * { text-decoration: none; }

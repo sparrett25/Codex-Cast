@@ -2,6 +2,10 @@
 import { Link } from "react-router-dom";
 import { useEffect, useMemo, useRef, useState } from "react";
 import "../styles/pages/Home.css";
+import UiTileCard from "../components/UiTileCard";
+import ChamberLayout from "../components/ChamberLayout";
+import PapaMini from "../components/PapaMini";
+import CastBackground from "../components/CastBackground"; // adjust path if needed
 
 const WHISPERS = [
   "Every cast is a story. What will yours be today?",
@@ -52,6 +56,13 @@ export default function Home() {
 
 
   return (
+  <CastBackground chamberKey="home">
+  <ChamberLayout
+      title="Home"
+      sub="Explore the chambers of Cast."
+      papa={<PapaMini line="Welcome to Cast. I am here to guide you on your journey." />}
+    >
+	
     <div className="home-container">
       <div className="home-header">
         <h1>Cast</h1>
@@ -59,13 +70,15 @@ export default function Home() {
         <p className="home-whisper">“{headerWhisper}”</p>
       </div>
 
-      <div className="portal-grid">
-        <PortalCard
+      <div className="portal-grid ui-grid">
+        
+		<PortalCard
           to="/mirror-lake"
           emoji="🌊"
           title="Mirror Lake"
           desc="Begin with intention. Choose your fish and center your focus."
         />
+		
         <PortalCard
           to="/journal"
           emoji="📜"
@@ -124,5 +137,7 @@ export default function Home() {
 
       <p className="home-tip">Tip: you can always return here via the top navigation.</p>
     </div>
+	</ChamberLayout>
+	 </CastBackground>
   );
 }

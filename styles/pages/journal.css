@@ -1,9 +1,11 @@
 
 .journal-page {
+  margin-top: 4rem; /* Adjust this value as needed */
   padding: 2rem;
   max-width: 800px;
-  margin: 0 auto;
-  background: radial-gradient(ellipse at center, #1e1e2e 0%, #0f172a 100%);
+  margin-left: auto;
+  margin-right: auto;
+  background: radial-gradient(ellipse at center, #0b0c1a 0%, #c49750 100%);
   border-radius: 16px;
   box-shadow: 0 0 20px rgba(147, 197, 253, 0.2);
   color: #e2e8f0;
@@ -14,18 +16,19 @@
   font-size: 2rem;
   text-align: center;
   margin-bottom: 1.5rem;
-  color: #f0f9ff;
+  color: #c49750;
+  text-shadow: 0 0 10px #100b02;
 }
 
 textarea {
-  width: 100%;
+  width: 95%;
   height: 180px;
   padding: 1rem;
-  background-color: #0f172a;
-  color: #f0f0f0;
-  border: 1px solid #334155;
+  background-color: #b8a86c;
+  color: #0e0d0d;
+  border: 1px solid #0a0b0b;
   border-radius: 12px;
-  font-size: 1rem;
+  font-size: 1.5rem;
   resize: vertical;
   font-family: 'Cinzel', serif;
   box-shadow: inset 0 0 8px rgba(255, 255, 255, 0.05);
@@ -36,7 +39,7 @@ button {
   padding: 0.75rem 1.5rem;
   font-size: 1rem;
   font-weight: bold;
-  background-color: #38bdf8;
+  background-color: #b8a86c;
   color: #0f172a;
   border: none;
   border-radius: 8px;
@@ -45,7 +48,7 @@ button {
 }
 
 button:hover {
-  background-color: #0ea5e9;
+  background-color: #c49750
 }
 
 .journal-response {
@@ -66,3 +69,4 @@ button:hover {
   color: #7dd3fc;
   margin: 0;
 }
+

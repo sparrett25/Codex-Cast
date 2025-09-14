@@ -1,0 +1,29 @@
+[
+  {
+    "id": "intro",
+    "title": "Even Stillness Moves",
+    "tone": "nostalgic",
+    "time": "day",
+    "voiceLineId": "tairo-001",
+    "summary": "Tairo greets you at first light. The lake remembers.",
+    "unlocks": ["explore"]
+  },
+  {
+    "id": "explore",
+    "title": "Where the Dragonfly Leads",
+    "tone": "adventurous",
+    "time": "day",
+    "voiceLineId": "tairo-002",
+    "summary": "Follow the shimmer across the reeds toward hidden coves.",
+    "unlocks": ["night-reflection"]
+  },
+  {
+    "id": "night-reflection",
+    "title": "Night Whispers",
+    "tone": "nostalgic",
+    "time": "night",
+    "voiceLineId": "tairo-003",
+    "summary": "Moonlight finds the quiet things. The waters answer softly.",
+    "unlocks": []
+  }
+]

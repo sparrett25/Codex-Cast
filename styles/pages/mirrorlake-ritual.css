@@ -1,0 +1,41 @@
+.ritual-grid{
+  display:grid; gap:18px;
+  grid-template-columns: 1fr;
+}
+@media (min-width: 980px){
+  .ritual-grid{ grid-template-columns: 1fr 1fr 1fr; }
+}
+
+/* borrow your plan-card styles; extend ring visuals */
+.ring-wrap{ display:grid; place-items:center; padding:8px 0; }
+.ring{
+  --ring: #60a5fa;
+  --ring-bg: rgba(255,255,255,.08);
+  width: 170px; height: 170px; border-radius: 999px;
+  display:grid; place-items:center;
+  box-shadow: 0 0 0 1px rgba(255,255,255,.08) inset, 0 8px 40px rgba(0,0,0,.35);
+  transition: filter .2s ease;
+}
+.ring.is-running{ filter: drop-shadow(0 0 12px rgba(96,165,250,.25)); }
+.ring-core{
+  width: 130px; height: 130px; border-radius: 999px;
+  background: linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.02));
+  border:1px solid rgba(255,255,255,.08);
+  display:grid; place-items:center; text-align:center;
+}
+.ring-time{ color:#e5e7eb; font-size: 2rem; line-height:1; }
+.ring-sub{ color:#9ca3af; font-size:.8rem; margin-top:4px; letter-spacing:.02em; }
+
+.ring-controls{ display:flex; gap:10px; margin-top:10px; }
+.done{ color:#a7f3d0; }
+
+.mantra{
+  margin-top:10px; font-style:italic; color:#dbeafe;
+  background: rgba(59,130,246,.12);
+  border: 1px solid rgba(59,130,246,.35);
+  border-radius: 10px; padding:8px 12px;
+}
+.reso-label{ margin-top:6px; color:#cbd5e1; }
+.reso-label span{ font-weight:600; color:#e5e7eb; }
+.reso-label em{ color:#a7f3d0; font-style:normal; }
+.mt-2{ margin-top:8px; }

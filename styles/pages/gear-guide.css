@@ -20,3 +20,50 @@
   max-width: 1200px;
   margin: 0 auto;
 }
+
+/* --- Gear cards (mirrors Compass tiles) --- */
+:root {
+  --tile-bg: rgba(255,255,255,0.06);
+  --tile-bg-hover: rgba(255,255,255,0.10);
+  --tile-border: rgba(255,255,255,0.12);
+}
+
+/* Style direct children of the grid as cards, no markup change required */
+.gear-list > a,
+.gear-list > button,
+.gear-list > div {
+  position: relative;
+  display: block;
+  border-radius: 12px;
+  border: 1px solid var(--tile-border);
+  background: var(--tile-bg);
+  padding: 0.9rem 1rem;
+  color: inherit;
+  text-decoration: none; /* kill underlines on links */
+  transition: background .15s ease, transform .06s ease;
+}
+
+/* Hover/focus polish */
+.gear-list > a:hover,
+.gear-list > button:hover,
+.gear-list > div:hover {
+  background: var(--tile-bg-hover);
+  transform: translateY(-1px);
+}
+.gear-list > a:focus-visible,
+.gear-list > button:focus-visible,
+.gear-list > div:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(56,189,248,0.5);
+}
+
+/* Optional: inner layout helpers if you want an icon + title + subtext */
+.gear-tile__row { display: flex; align-items: center; gap: .75rem; }
+.gear-tile__icon { font-size: 1.15rem; }
+.gear-tile__title { margin: 0; font-weight: 600; color: #fff; }
+.gear-tile__sub { margin: .25rem 0 0; font-size: .9rem; color: rgba(255,255,255,.72); }
+.gear-tile__arrow {
+  position: absolute; right: .9rem; top: 50%; transform: translateY(-50%);
+  opacity: .35; transition: opacity .15s ease;
+}
+.gear-list > *:hover .gear-tile__arrow { opacity: .8; }

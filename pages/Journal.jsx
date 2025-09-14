@@ -1,10 +1,19 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import '../styles/pages/journal.css';
+import CastBackground from "../components/CastBackground"; // adjust path if needed
 
 export default function Journal() {
   const [entry, setEntry] = useState('');
   const [submitted, setSubmitted] = useState(false);
   const [tairoResponse, setTairoResponse] = useState('');
+
+  // Add this useEffect to handle the background class on <body>
+  useEffect(() => {
+    document.body.classList.add('journal-bg');
+    return () => {
+      document.body.classList.remove('journal-bg');
+    };
+  }, []);
 
   const handleSubmit = () => {
     if (!entry.trim()) return;
@@ -32,6 +41,7 @@ export default function Journal() {
   };
 
   return (
+  <CastBackground chamberKey="journal">
     <div className="journal-page">
       <h1 className="journal-title">Reflective Journal</h1>
       <textarea
@@ -48,5 +58,6 @@ export default function Journal() {
         </div>
       )}
     </div>
+	</CastBackground>
   );
 }

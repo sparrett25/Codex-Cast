@@ -1,0 +1,74 @@
+{
+  "tripPlanner.open": [
+    "Every trip begins with a choice, Grant. The lake is waiting—shall we set a day?"
+  ],
+  "tripPlanner.water": [
+    "Every lake has its own spirit. Choose the water that calls your name today."
+  ],
+  "species.bluegill": [
+    "Small, steady, and bright—Bluegill teach patience in the shallows."
+  ],
+  "species.largemouth_bass": [
+    "Bold and fierce—the Bass teaches timing guided by strength."
+  ],
+  "species.channel_catfish": [
+    "Hidden in the deep—the Catfish reminds us to look where others will not."
+  ],
+  "summary.southWind": [
+    "A south wind is a friendly change. Walk lightly with the water today.",
+    "The south wind stirs the lake, Grant. Fish will move—and so will you.",
+    "When the wind comes from the south, we adapt with grace."
+  ],
+  "summary.dawnTopwater": [
+    "At dawn, walk the surface with patience. The water listens closely then."
+  ],
+  "journal.prompt": [
+    "The journal holds more than what you caught—write what the day felt like.",
+    "Even one line is enough if it is true, Grant.",
+    "Let the page carry your memory. The lake remembers with you."
+  ],
+    
+  "species.bluegill": [
+    "Small, steady, and bright—Bluegill teach patience in the shallows."
+  ],
+  "species.largemouth_bass": [
+    "Bold and fierce—the Bass teaches timing guided by strength."
+  ],
+  "species.channel_catfish": [
+    "Hidden in the deep—the Catfish reminds us to look where others will not."
+  ],
+  
+  "chamber.species": [
+    "Each species has a voice; listen for the pattern it repeats.",
+    "When you know where they rest and when they feed, you meet them halfway.",
+	"Know where they rest and when they feed—meet them halfway."
+  ],
+  
+  "chamber.gear": [
+    "The rod is a word; the hand gives it meaning.",
+    "Tools are a language—choose the one the water understands today."
+  ],
+  
+  "chamber.techniques": [
+    "Technique is rhythm—practice until your hands remember.",
+    "Cadence first; speed second; force last."
+  ],
+  "chamber.environment": [
+    "Read the wind, listen to the tide, trust your line.",
+    "Weather sets the stage; presence writes the scene."
+  ],
+  "chamber.locations": [
+    "The map remembers; presence reveals.",
+    "Pins are footprints—walk them again with new wind."
+  ],
+  "chamber.mirror": [
+    "Breathe. Name your intent softly. Let the water hold it.",
+    "Still water remembers. Align your cast with your breath."
+  ],
+  "summary.note": [
+    "Pack lightly, move slowly, read the edges.",
+    "Let the wind tell you your retrieve."
+  ]
+
+
+}

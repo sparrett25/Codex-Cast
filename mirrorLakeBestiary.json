@@ -1,0 +1,54 @@
+{
+  "mirrorLakeBestiary": [
+    {
+      "id": "largemouth_bass",
+      "name": "Largemouth Bass",
+      "alias": "The Gaping Tyrant",
+      "poster": "wanted_bass.png",
+      "reward": "Crankbait or Jig",
+      "last_seen": "Lakes, Ponds",
+      "capture_notes": "Early morning or evening",
+      "mythic_lore": "Endless hunger, lurks in shadows, teaches restraint."
+    },
+    {
+      "id": "tilapia",
+      "name": "Tilapia",
+      "alias": "The Silent Invader",
+      "poster": "wanted_tilapia.png",
+      "reward": "Corn, Dough, Worms",
+      "last_seen": "Warm shallows, crowded schools",
+      "capture_notes": "Active in mid-day, thrives everywhere",
+      "mythic_lore": "Prolific, invasive, teaches awareness of abundance and imbalance."
+    },
+    {
+      "id": "catfish",
+      "name": "Catfish",
+      "alias": "The Whiskered Leviathan",
+      "poster": "wanted_catfish.png",
+      "reward": "Chicken liver, Stink bait",
+      "last_seen": "River bottoms, deep holes",
+      "capture_notes": "Nighttime feeding, patient strikes",
+      "mythic_lore": "Ancient, slow but strong, teaches patience and unseen strength."
+    },
+    {
+      "id": "redfish",
+      "name": "Redfish",
+      "alias": "The Copper Raider",
+      "poster": "wanted_redfish.png",
+      "reward": "Shrimp, Cut bait, Spoons",
+      "last_seen": "Bays, Flats, Mangroves",
+      "capture_notes": "Tides influence feeding; strong runs inshore",
+      "mythic_lore": "Raider of currents, copper strength, teaches rhythm of tides."
+    },
+    {
+      "id": "snook",
+      "name": "Snook",
+      "alias": "The Silver Ghost",
+      "poster": "wanted_snook.png",
+      "reward": "Live baitfish, Jigs",
+      "last_seen": "Bridges, Inlets, Mangroves",
+      "capture_notes": "Best at dusk or dawn, wary but powerful",
+      "mythic_lore": "Elusive silver shadow, teaches timing and subtlety."
+    }
+  ]
+}

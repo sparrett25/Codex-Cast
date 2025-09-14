@@ -1,0 +1,65 @@
+[
+  {
+    "id": "mirror:first-cast-journal",
+    "title": "First Cast at Dawn",
+    "summary": "Begin with intention at Mirror Lake.",
+    "lake": "mirror-lake",
+    "triggers": [
+      { "when": "journal.created", "where": { "lake": "mirror-lake" }, "require": { "tone": "nostalgic" } }
+    ],
+    "rewards": [
+      { "type": "chapter.unlock", "chapterId": "intro" },
+      { "type": "badge", "badgeId": "first-cast" }
+    ]
+  },
+  {
+    "id": "mirror:dragonfly-path",
+    "title": "Follow the Dragonfly",
+    "summary": "Let curiosity lead you toward hidden coves.",
+    "lake": "mirror-lake",
+    "triggers": [
+      { "when": "catch.logged", "where": { "lake": "mirror-lake" }, "require": { "species": "Bass" } }
+    ],
+    "rewards": [
+      { "type": "chapter.unlock", "chapterId": "explore" },
+      { "type": "badge", "badgeId": "bass-first" }
+    ]
+  },
+  {
+    "id": "mirror:night-whispers",
+    "title": "Night Whispers",
+    "summary": "Cast beneath the moon and listen to what the water remembers.",
+    "lake": "mirror-lake",
+    "triggers": [
+      { "when": "catch.logged", "where": { "lake": "mirror-lake" }, "require": { "night": true } }
+    ],
+    "rewards": [
+      { "type": "chapter.unlock", "chapterId": "night-reflection" },
+      { "type": "badge", "badgeId": "moon-caster" }
+    ]
+  },
+  {
+    "id": "mirror:first-of-lake",
+    "title": "First of Its Kind",
+    "summary": "Log the first catch of a species in Mirror Lake.",
+    "lake": "mirror-lake",
+    "triggers": [
+      { "when": "species.firstOfLake", "where": { "lake": "mirror-lake" } }
+    ],
+    "rewards": [
+      { "type": "badge", "badgeId": "first-of-lake" }
+    ]
+  },
+  {
+    "id": "mirror:three-day-rhythm",
+    "title": "Three-Day Rhythm",
+    "summary": "Return to Mirror Lake three days in a row.",
+    "lake": "mirror-lake",
+    "triggers": [
+      { "when": "streak.days", "where": { "lake": "mirror-lake" }, "require": { "minCount": 3 } }
+    ],
+    "rewards": [
+      { "type": "badge", "badgeId": "rhythm-3" }
+    ]
+  }
+]

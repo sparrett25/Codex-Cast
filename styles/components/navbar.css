@@ -5,6 +5,7 @@
   padding: 10px 10px 0;
   background: linear-gradient(to bottom, rgba(10,15,20,.65), rgba(10,15,20,0));
   backdrop-filter: blur(6px) saturate(1.05);
+  
 }
 
 /* Inner bar */

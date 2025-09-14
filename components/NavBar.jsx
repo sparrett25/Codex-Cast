@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 // import ScrollLink from '../components/Scrolls/ScrollLink';
 import { NavLink } from 'react-router-dom';
-import "../styles/components/navbar.css";
+import "../styles/components/NavBar.css";
 
 
 function LinkPill({ to, children }) {
