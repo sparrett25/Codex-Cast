@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import NavBar from '../components/NavBar';
 
 import CatchForm from '../components/CatchLog/CatchForm';
 import CatchEntryList from '../components/CatchLog/CatchEntryList';
@@ -24,7 +23,7 @@ const CatchJournal = () => {
   return (
   
     <>
-	<NavBar />
+	
     <div className="catch-journal-container">
       {selectedSpecies && (
         <div className="species-reminder">

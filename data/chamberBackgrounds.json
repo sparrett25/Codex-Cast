@@ -1,6 +1,6 @@
 {
-  "home":         { "src": "/images/chambers/home-dawn.png",        "caption": "Cast • dawn on the dock" },
-  "mirror-lake":  { "src": "/images/chambers/mirror-lake-day.png",   "caption": "Mirror Lake • still waters" },
+  
+  
   "journal":      { "src": "/images/chambers/journal-wood.png",      "caption": "Journal • lantern and pages" },
   "plan-trip":    { "src": "/images/chambers/plan-trip-topo.png",    "caption": "Plan Trip • maps and compass" },
   "species":      { "src": "/images/chambers/species-watercol.png",  "caption": "Species • beneath the surface" },
@@ -11,5 +11,17 @@
   "gear":         { "src": "/images/chambers/gear.png",              "caption": "Gear • tools of the craft" },
   "techniques":   { "src": "/images/chambers/techniques.png",        "caption": "Techniques • the cast arc" },
   "trip-summary": { "src": "/images/chambers/trip-summary.png",      "caption": "Trip Summary • the day remembered" },
-  "favorites":    { "src": "/images/chambers/favorites.png",         "caption": "Favorites • treasured finds" }
+  "favorites":    { "src": "/images/chambers/favorites.png",         "caption": "Favorites • treasured finds" },
+
+
+
+
+"intro":        { "src": "/images/chambers/home-dawn.png",        "caption": "Cast Art • Dawn Mist", "overlay": "rgba(0,0,0,0.45)" },
+"home":         { "src": "/images/chambers/home.png",        "caption": "Cast Art • Dock in Daylight", "overlay": "rgba(0,0,0,0.30)" },
+"compass":      { "src": "/images/chambers/compass.png",        "caption": "Cast Art • Lake at Sunset", "overlay": "rgba(0,0,0,0.35)" },
+"mirror-lake-night":      { "src": "/images/lakes/mirror/mirror-lake-night.png",        "caption": "Cast Art • Starry Reflection", "overlay": "rgba(0,0,0,0.50)" },
+"mirror-lake-hidden-bend":      { "src": "/images/chambers/home-dawn.png",        "caption": "Cast Art • Hidden Bend", "overlay": "rgba(0,0,0,0.45)" }
+
+
+
 }

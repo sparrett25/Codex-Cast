@@ -1,4 +1,4 @@
-🌊📜 Prologue of Mirror Lake — in the voice of Tairo
+🌊📜 Prologue of Mirror Lake — in the voice of Papa
 
 "Traveler, draw close and let me tell you a story older than your name, older even than the pines that lean toward these waters. This is the tale of Mirror Lake, where sky bent down to kiss the earth and never let go.
 
@@ -16,7 +16,7 @@ So choose your quest. Seek the outlaw. But know this — what you seek is alread
 
 📜 Chapter One — The Gaping Tyrant (Largemouth Bass)
 
-as told by Tairo
+as told by Papa
 
 "Every tale must begin with hunger, traveler. And so we begin with the outlaw they call the Gaping Tyrant.
 
@@ -31,7 +31,7 @@ So string your line, and step softly to the reeds. His bounty is not just flesh 
 
 ----
 
-🌊📜 Tairo’s Narration: Unlocking the Training Grounds
+🌊📜 Papa’s Narration: Unlocking the Training Grounds
 
 "Traveler… pause for a moment and breathe. Do you feel it? The ripple has changed. The lake knows your presence now. You have faced your first outlaw, and the waters have answered. You have crossed the threshold.
 

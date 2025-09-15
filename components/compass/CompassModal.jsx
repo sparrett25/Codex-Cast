@@ -67,8 +67,10 @@ export default function CompassModal({ open, onClose }) {
           <div className="px-6 py-5 grid gap-6">
             <SectionLabel>Plan & Trip</SectionLabel>
             <TileGrid>
+			<NavTile to="/intro" icon="🏠" title="Intro" sub="Welcome to Cast." onClose={onClose}/>
 			<NavTile to="/" icon="🏠" title="Home" sub="Return to the dock." onClose={onClose}/>
-              <NavTile to="/plan" icon="🧭" title="Plan Trip" sub="Pick date, time & water." onClose={onClose}/>
+			
+              <NavTile to="/plan-trip" icon="🧭" title="Plan Trip" sub="Pick date, time & water." onClose={onClose}/>
 			  <NavTile to="/favorites" icon="⭐" title="Favorites" sub="Starred gear, species & techniques." onClose={onClose} />
               <NavTile to="/species-select" icon="🎯" title="Choose Species" sub="Set intention for the day." onClose={onClose}/>
               <NavTile to="/trip-summary" icon="📋" title="Trip Summary" sub="Gear, bait, techniques, notes." onClose={onClose}/>
@@ -79,18 +81,18 @@ export default function CompassModal({ open, onClose }) {
 
             <SectionLabel>Guides</SectionLabel>
             <TileGrid>
-              <NavTile to="/species" icon="🐟" title="Species" sub="Habits & habitats." onClose={onClose}/>
-              <NavTile to="/gear" icon="🎣" title="Gear" sub="Rods, reels, line & tackle." onClose={onClose}/>
-              <NavTile to="/techniques" icon="🌀" title="Techniques" sub="Practice flows & refine craft." onClose={onClose}/>
-              <NavTile to="/environment" icon="🌤️" title="Environment" sub="Wind, clarity, season, moon." onClose={onClose}/>
-              <NavTile to="/locations-guide" icon="📍" title="Locations" sub="Banks, bends & cover." onClose={onClose}/>
+              <NavTile to="/species" icon="🐟" title="Species Guide" sub="Habits & habitats." onClose={onClose}/>
+              <NavTile to="/gear" icon="🎣" title="Gear Guide" sub="Rods, reels, line & tackle." onClose={onClose}/>
+              <NavTile to="/techniques" icon="🌀" title="Techniques Guide" sub="Practice flows & refine craft." onClose={onClose}/>
+              <NavTile to="/environment" icon="🌤️" title="Environment Guide" sub="Wind, clarity, season, moon." onClose={onClose}/>
+              <NavTile to="/locations-guide" icon="📍" title="Locations Guide" sub="Banks, bends & cover." onClose={onClose}/>
             </TileGrid>
 
             <SectionLabel>Memory</SectionLabel>
             <TileGrid>
-              <NavTile to="/journal" icon="📓" title="Journal" sub="Reflections & lessons." onClose={onClose}/>
-              <NavTile to="/catch-journal" icon="🏷️" title="Catch Ledger" sub="Species, weight, place." onClose={onClose}/>
-              <NavTile to="/journal-archive" icon="🗂️" title="Archive" sub="Browse by moment & tag." onClose={onClose}/>
+              <NavTile to="/quest-journal" icon="📓" title="Quest Journal" sub="Reflections & lessons." onClose={onClose}/>
+              <NavTile to="/catch-ledger" icon="🏷️" title="Catch Ledger" sub="Species, weight, place." onClose={onClose}/>
+              <NavTile to="/archive" icon="🗂️" title="Journal Archives" sub="Browse by moment & tag." onClose={onClose}/>
             </TileGrid>
 			
 			<SectionLabel>Story</SectionLabel>

@@ -153,7 +153,7 @@ export default function MapView() {
 
   return (
     <ScrollModalProvider>
-      <NavBar />
+      
       <div className="mapview-container">
         <div ref={mapContainerRef} className="map-container" />
 

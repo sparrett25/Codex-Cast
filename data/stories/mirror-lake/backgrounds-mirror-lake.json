@@ -1,22 +1,25 @@
 {
-  "mirror-lake": [
+  "lake_id": "lake.mirror_lake",
+  "version": 1,
+  "updated_at": "2025-09-14T00:00:00Z",
+  "backgrounds": [
     {
-      "id": "memory",
-      "src": "/assets/mirror-lake/mirror-lake-memory.png",
-      "caption": "Still waters, quiet reflections.",
-      "conditions": { "chapter": "intro", "tone": "nostalgic" }
+      "chapter_id": "intro",
+      "image": "/images/stories/mirror-lake/dawn-mist.jpg",
+      "credit": "Cast Art • Dawn Mist",
+      "overlay": "rgba(0,0,0,0.40)"   
     },
     {
-      "id": "exploration",
-      "src": "/assets/mirror-lake/mirror-lake-explore.png",
-      "caption": "The dragonfly hovers. The waters beckon.",
-      "conditions": { "chapter": "explore", "tone": "adventurous" }
+      "chapter_id": "willow_way",
+      "image": "/images/stories/mirror-lake/willow-shade.jpg",
+      "credit": "Cast Art • Willow Shade",
+      "overlay": "rgba(0,0,0,0.35)"
     },
     {
-      "id": "night",
-      "src": "/assets/mirror-lake/mirror-lake-sunset.png",
-      "caption": "Moonlight dances across rippling water.",
-      "conditions": { "time": "night" }
+      "chapter_id": "hidden_bend",
+      "image": "/images/stories/mirror-lake/hidden-bend.jpg",
+      "credit": "Cast Art • Hidden Bend",
+      "overlay": "rgba(0,0,0,0.45)"
     }
   ]
 }
