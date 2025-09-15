@@ -31,7 +31,7 @@ export default function App() {
     <StoryProvider>
 	<Routes>
       <Route element={<CastShell />}>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Intro />} />
 		<Route path="/home" element={<Home />} />
 		<Route path="/compass" element={<Compass />} />
 		<Route path="intro" element={<Intro />} />
