@@ -68,7 +68,7 @@ export default function CompassModal({ open, onClose }) {
             <SectionLabel>Plan & Trip</SectionLabel>
             <TileGrid>
 			<NavTile to="/intro" icon="🏠" title="Intro" sub="Welcome to Cast." onClose={onClose}/>
-			<NavTile to="/home" icon="🏠" title="Home" sub="Return to the dock." onClose={onClose}/>
+			<NavTile to="/" icon="🏠" title="Home" sub="Return to the dock." onClose={onClose}/>
 			
               <NavTile to="/plan-trip" icon="🧭" title="Plan Trip" sub="Pick date, time & water." onClose={onClose}/>
 			  <NavTile to="/favorites" icon="⭐" title="Favorites" sub="Starred gear, species & techniques." onClose={onClose} />

@@ -24,14 +24,14 @@ import { StoryProvider } from "./context/StoryContext";
 import Dock from "./pages/Dock";
 import QuestsPage from "./pages/QuestsPage";
 import QuestDetailPage from "./pages/QuestDetailPage";
-
+import CastApp from "./pages/CastApp"; 
 
 export default function App() {
   return (
     <StoryProvider>
 	<Routes>
       <Route element={<CastShell />}>
-        <Route path="/" element={<Intro />} />
+        <Route path="/" element={<Home />} />
 		<Route path="/home" element={<Home />} />
 		<Route path="/compass" element={<Compass />} />
 		<Route path="intro" element={<Intro />} />
@@ -57,6 +57,7 @@ export default function App() {
         
         <Route path="/mirror-lake" element={<MirrorLake />} />
         <Route path="/mirror-lake-ritual"  element={<MirrorLakeRitual />} />
+		<Route path="/cast" element={<CastApp />} />  
       
       </Route>
     </Routes>
