@@ -1,13 +1,13 @@
 // src/cast/assets/assetMap.js
 
 
-import bgLake from "./assets/backgrounds/bg_mirror_lake.jpg";
-import bgBait from "./assets/backgrounds/bg_baitshop.jpg";
-import bgCabin from "./assets/backgrounds/bg_cabin_interior.jpg"; 
+import bgLake from "./backgrounds/bg_mirror_lake.jpg";
+import bgBait from "./backgrounds/bg_baitshop.jpg";
+import bgCabin from "./backgrounds/bg_cabin_interior.jpg"; 
 
 
-import spriteShopkeeper from "./assets/sprites/shopkeeper.png";
-import spriteSwallow from "./assets/sprites/swallow.png"; 
+import spriteShopkeeper from "./sprites/shopkeeper.png";
+import spriteSwallow from "./sprites/swallow.png"; 
 
 
 
