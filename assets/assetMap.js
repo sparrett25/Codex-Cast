@@ -3,7 +3,7 @@ const assets = {
   backgrounds: {
     "bg_mirror_lake.jpg": "/assets/backgrounds/bg_mirror_lake.jpg",
     "bg_baitshop.jpg": "/assets/backgrounds/bg_baitshop.jpg",
-    "bg_cabin_interior.jpg": "/assets/backgrounds/bg_cabin_interior.jpg", // ← PNG/JPG
+    "bg_cabin_interior.jpg": "/assets/backgrounds/bg_cabin_interior.jpg", 
   },
   sprites: {
     player: "/assets/sprites/player.png",

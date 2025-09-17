@@ -3,7 +3,7 @@ import assets from "../assets/assetMap";
 import GuideCard from "../ui/GuideCard";
 
 export default function Cabin({ goBack }) {
-  const bg = assets.backgrounds["bg_cabin_interior.svg"]; // or .jpg if you swapped
+  const bg = assets.backgrounds["bg_cabin_interior.jpg"]; // or .jpg if you swapped
   const papa = assets.sprites.shopkeeper;                 // or distinct papa sprite
   const [mode, setMode] = useState("main");               // main | gear | fire
 
